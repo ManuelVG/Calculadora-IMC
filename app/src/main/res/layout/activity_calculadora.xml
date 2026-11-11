@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen de fondo que ocupa toda la pantalla -->
+    <ImageView
+        android:id="@+id/imgFondoCalculadora"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_salud"
+        android:scaleType="centerCrop"
+        android:alpha="0.2"
+        android:contentDescription="@string/desc_img_bienvenida" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Título de la app -->
+            <TextView
+                android:id="@+id/tvTituloCalc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/titulo_text"
+                android:background="@color/titulo_bg"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textAlignment="center"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Nombre del autor -->
+            <TextView
+                android:id="@+id/tvAutorCalc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_autor"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Campo para el Peso -->
+            <EditText
+                android:id="@+id/etPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_peso"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Campo para la Estatura -->
+            <EditText
+                android:id="@+id/etEstatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_estatura"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Botón para realizar el cálculo -->
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_calcular"
+                android:textSize="16sp"
+                android:backgroundTint="@color/btn_color"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Campo para mostrar el resultado -->
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/resultado_placeholder"
+                android:textColor="@color/black"
+                android:background="@color/resultado_bg"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:padding="16dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Botón para volver al inicio -->
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_volver"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

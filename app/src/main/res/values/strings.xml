@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calculadora IMC</string>
+    <string name="nombre_autor">Autor: Manuel</string>
+
+    <!-- Primera Pantalla (Pantalla de bienvenida) -->
+    <string name="descripcion_app">Esta aplicación te permite calcular tu Índice de Masa Corporal (IMC) de forma rápida y sencilla.\n\nSimplemente introduce tu peso en kilogramos y tu estatura en metros para conocer tu estado nutricional actual.</string>
+    <string name="btn_ir_calculadora">Ir a la Calculadora</string>
+    <string name="desc_img_bienvenida">Imagen ilustrativa de salud e IMC</string>
+
+    <!-- Segunda Pantalla (Calculadora) -->
+    <string name="hint_peso">Peso en kg (ej. 70.5)</string>
+    <string name="hint_estatura">Estatura en cm (ej. 175)</string>
+    <string name="btn_calcular">Calcular IMC</string>
+    <string name="btn_volver">Volver al inicio</string>
+    <string name="resultado_placeholder">El resultado aparecerá aquí</string>
+
+    <!-- Mensajes de Error (Toast) -->
+    <string name="error_campos_vacios">Por favor, rellena todos los campos</string>
+    <string name="error_valores_invalidos">Introduce valores numéricos válidos mayores que cero</string>
+</resources>

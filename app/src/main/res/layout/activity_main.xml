@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_degradado"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Título de la app -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/titulo_text"
+            android:background="@color/titulo_bg"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Nombre del autor -->
+        <TextView
+            android:id="@+id/tvAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_autor"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Imagen que no ocupa toda la pantalla -->
+        <ImageView
+            android:id="@+id/imgBienvenida"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_salud"
+            android:contentDescription="@string/desc_img_bienvenida"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Explicación de la app en varias líneas -->
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_app"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Botón para ir a la Calculadora -->
+        <Button
+            android:id="@+id/btnIrCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_ir_calculadora"
+            android:textSize="18sp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:backgroundTint="@color/btn_color" />
+
+    </LinearLayout>
+</ScrollView>
